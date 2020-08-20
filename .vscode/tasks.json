@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: gcc build active file",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "src/*.c",
+                "-Wall",
+                "-Wextra",
+                "-Werror",
+                "-I",
+                "include",
+                "-L./libft/",
+                "-lft",
+                "-o",
+                "push_swap"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
